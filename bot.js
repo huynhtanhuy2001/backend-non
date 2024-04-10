@@ -14,10 +14,10 @@ bot.onText(/\/start/, (msg) => {
   const options = {
     reply_markup: JSON.stringify({
       inline_keyboard: [
-        [{text: "Open Non", url: "http://127.0.0.1:3000"}]
+        [{text: "Open Non", url: "https://nonv1.vercel.app/"}]
       ]
     })
   };
 
-  bot.sendMessage(chatId, 'Huy', options);
+  bot.sendMessage(chatId, 'The first master node on telegram (@Dev Huy)', options);
 });
