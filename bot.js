@@ -17,10 +17,11 @@ bot.onText(/\/start/, (msg) => {
   const options = {
     reply_markup: JSON.stringify({
       inline_keyboard: [
-        [{ text: "Open Non", url: "https://nonv1.vercel.app/" }]
+        [{ text: "Open Non Website", url: "https://nonv1.vercel.app/" }],
+        [{ text: "Open Non App ", url: "t.me/NonTokenBot/nontokenapp" }]
       ]
     })
   };
 
-  bot.sendMessage(chatId, 'The first master node on telegram (@Dev Huy)', options);
+  bot.sendMessage(chatId, 'NON | The first master node on telegram  ', options);
 });
