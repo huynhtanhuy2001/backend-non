@@ -17,7 +17,8 @@ bot.onText(/\/start/, (msg) => {
   const options = {
     reply_markup: JSON.stringify({
       inline_keyboard: [
-        [{ text: "Open Non", url: "https://nonv1.vercel.app/" }]
+        [{ text: "Open Non Website", url: "https://nonv1.vercel.app/" }],
+        [{ text: "Open Non App", url: "https://nonv1.vercel.app/" }]
       ]
     })
   };
