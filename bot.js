@@ -5,7 +5,10 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = process.env.TELEGRAM_BOT_TOKEN;
 
 // Tạo một bot Telegram mới sử dụng polling để lấy các cập nhật mới
-const bot = new TelegramBot(token, {polling: true});
+const bot = new TelegramBot(token, { polling: true });
+
+// Đặt webhook
+bot.setWebHook('https://nonv1.vercel.app/api/bot.js');
 
 // Lắng nghe khi có người dùng nhấn vào nút /start
 bot.onText(/\/start/, (msg) => {
@@ -14,7 +17,7 @@ bot.onText(/\/start/, (msg) => {
   const options = {
     reply_markup: JSON.stringify({
       inline_keyboard: [
-        [{text: "Open Non", url: "https://nonv1.vercel.app/"}]
+        [{ text: "Open Non", url: "https://nonv1.vercel.app/" }]
       ]
     })
   };
