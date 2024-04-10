@@ -18,7 +18,7 @@ bot.onText(/\/start/, (msg) => {
     reply_markup: JSON.stringify({
       inline_keyboard: [
         [{ text: "Open Non Website", url: "https://nonv1.vercel.app/" }],
-        [{ text: "Open Non App", url: "t.me/NonTokenBot/nontokenapp" }]
+        [{ text: "Open Non App", url: "https://t.me/NonTokenBot/nontokenapp" }]
       ]
     })
   };
