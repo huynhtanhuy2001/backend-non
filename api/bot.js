@@ -1,4 +1,4 @@
-const { bot } = require('../api/bot.js'); 
+const { bot } = require('../bot'); 
 
 module.exports = (req, res) => {
   const body = req.body;
